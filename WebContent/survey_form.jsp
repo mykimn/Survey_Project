@@ -1,10 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="EUC-KR"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>»ö±ò ½É¸®Å×½ºÆ®</title>
+<meta charset="UTF-8">
+<title>ìƒ‰ê¹” ì‹¬ë¦¬í…ŒìŠ¤íŠ¸</title>
 <style>
 @import url('https://fonts.googleapis.com/css?family=East+Sea+Dokdo|Nanum+Gothic|Song+Myung|Anton|Passion+One|Archivo+Black');
 * {
@@ -36,20 +35,27 @@ input[type=submit], input[type=button]{
 </style>
 </head>
 <body>
-<center><h1>°¡Àå ÁÁ¾ÆÇÏ´Â »ö±òÀ» °ñ¶óÁÖ¼¼¿ä!</h1></center>
-<center><form action="survey_result.jsp">
-<p><input type="radio" style="width:20px;height:20px;border:1px;" name="color" value="red"><font color="red"><label id="color"> »¡°£»ö</label></font><br></p>
-<p><input type="radio" name="color" value="orange"><font color="orange"> ÁÖÈ²»ö</font><br></p>
-<p><input type="radio" name="color" value="yellow"><font color="yellow"> ³ë¶õ»ö</font><br></p>
-<p><input type="radio" name="color" value="green"><font color="green"> ÃÊ·Ï»ö</font><br></p>
-<p><input type="radio" name="color" value="blue"><font color="blue"> ÆÄ¶õ»ö</font><br></p>
-<p><input type="radio" name="color" value="indigo"><font color="indigo"> ³²»ö</font><br></p>
-<p><input type="radio" name="color" value="violet"><font color="purple"> º¸¶ó»ö</font><br></p>
-<p><input type="radio" name="color" value="grey"><font color="grey"> È¸»ö</font><br></p>
-<p><input type="radio" name="color" value="black"> °ËÀº»ö<br></p>
-<p><input type="radio" name="color" value="white"><font color="white"> Èò»ö</font><br></p>
-<input type="button" value="ÅõÇ¥ÇÏ±â" onclick="location.href='survey_success.jsp'">
-<input type="submit" value="°á°úº¸±â">
+<%
+	request.setCharacterEncoding("UTF-8");
+	String name = request.getParameter("name");
+	String pw = request.getParameter("pw");
+%>
+<center><h1>ê°€ì¥ ì¢‹ì•„í•˜ëŠ” ìƒ‰ê¹”ì„ ê³¨ë¼ì£¼ì„¸ìš”!</h1></center>
+<center><form action="survey_success.jsp" method="post">
+<p><input type="radio" style="width:20px;height:20px;border:1px;" name="color" value="red"><font color="red"><label id="color"> ë¹¨ê°„ìƒ‰</label></font><br></p>
+<p><input type="radio" name="color" value="orange"><font color="orange"> ì£¼í™©ìƒ‰</font><br></p>
+<p><input type="radio" name="color" value="yellow"><font color="yellow"> ë…¸ë€ìƒ‰</font><br></p>
+<p><input type="radio" name="color" value="green"><font color="green"> ì´ˆë¡ìƒ‰</font><br></p>
+<p><input type="radio" name="color" value="blue"><font color="blue"> íŒŒë€ìƒ‰</font><br></p>
+<p><input type="radio" name="color" value="indigo"><font color="indigo"> ë‚¨ìƒ‰</font><br></p>
+<p><input type="radio" name="color" value="violet"><font color="purple"> ë³´ë¼ìƒ‰</font><br></p>
+<p><input type="radio" name="color" value="grey"><font color="grey"> íšŒìƒ‰</font><br></p>
+<p><input type="radio" name="color" value="black"> ê²€ì€ìƒ‰<br></p>
+<p><input type="radio" name="color" value="white"><font color="white"> í°ìƒ‰</font><br></p>
+<input type="hidden" name="name" value="<%=name%>">
+<input type="hidden" name="pw" value="<%=pw%>">
+<input type="submit" value="íˆ¬í‘œí•˜ê¸°">
+<input type="button" value="ê²°ê³¼ë³´ê¸°" onclick="location.href='survey_result.jsp'">
 </form></center>
 </body>
 </html>
