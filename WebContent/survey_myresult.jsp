@@ -34,12 +34,12 @@ input[type=submit]{
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    margin-left:2%;
+    margin-left:1%;
     margin-top:2%;
     font-size:x-large;
 }
 label{
-	margin-left:-10px;
+	margin-left:-20px;
     display:inline-block;
     width:110px;
     line-height:170%;
@@ -47,11 +47,11 @@ label{
 </style>
 </head>
 <body>
-<h1 style="text-align:center; margin-top:10%;"><font color="white">ENTER TO COLOR SURVEY</font></h1>
-<form method="post" action="survey_form.jsp">
-	<label style="margin-top:50px;">닉네임 </label><input type="text" name="name" required><br>
-	<label>비밀번호 </label><input type="password" name="pw" required><br>
-	<input type="submit" value="시작하기">
+<h1 style="text-align:center; margin-top:10%;">SHOW MY PAGE</h1>
+<form method="post" action="survey_showResult.jsp">
+	<label style="margin-top:50px;">닉네임 </label><input type="text" name="name"><br>
+	<label>비밀번호 </label><input type="password" name="pw"><br>
+	<input type="submit" value="내 결과 확인">
 </form>
 </body>
 </html>

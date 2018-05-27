@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>WELCOME</title>
+<title>ADMIN PAGE</title>
 <style>
 @import url('https://fonts.googleapis.com/css?family=East+Sea+Dokdo|Nanum+Gothic|Song+Myung|Anton|Passion+One|Archivo+Black');
 * {
@@ -47,11 +47,11 @@ label{
 </style>
 </head>
 <body>
-<h1 style="text-align:center; margin-top:10%;"><font color="white">ENTER TO COLOR SURVEY</font></h1>
-<form method="post" action="survey_form.jsp">
-	<label style="margin-top:50px;">닉네임 </label><input type="text" name="name" required><br>
+<h1 style="text-align:center; margin-top:10%;"><font color="white">COLOR SURVEY ADMIN PAGE</font></h1>
+<form method="post" action="survey_admin.jsp">
+	<label style="margin-top:50px;">아이디</label><input type="text" name="id" required><br>
 	<label>비밀번호 </label><input type="password" name="pw" required><br>
-	<input type="submit" value="시작하기">
+	<input type="submit" value="로그인">
 </form>
 </body>
 </html>

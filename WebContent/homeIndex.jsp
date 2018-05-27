@@ -26,17 +26,18 @@ input[type=text],input[type=password]{
     border-radius: 4px;
     box-sizing: border-box;
 }
-input[type=submit]{
-    width: 20%;
-    background-color: -webkit-linear-gradient(20deg, rgb(245,201,201), rgb(145,166,207));
+input[type=button]{
+    width: 40%;
+    height: 400px;
+    background-color: #EFF5FB;
     color: black;
     padding: 10px 20px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    margin-left:2%;
     margin-top:2%;
     font-size:x-large;
+    display:inline;
 }
 label{
 	margin-left:-10px;
@@ -47,11 +48,10 @@ label{
 </style>
 </head>
 <body>
-<h1 style="text-align:center; margin-top:10%;"><font color="white">ENTER TO COLOR SURVEY</font></h1>
-<form method="post" action="survey_form.jsp">
-	<label style="margin-top:50px;">닉네임 </label><input type="text" name="name" required><br>
-	<label>비밀번호 </label><input type="password" name="pw" required><br>
-	<input type="submit" value="시작하기">
+<h1 style="text-align:center; margin-top:10%;">WELCOME TO <font color="red">C</font><font color="orange">O</font><font color="yellow">L</font><font color="green">O</font><font color="blue">R</font> SURVEY</h1>
+<form method="post">
+<input type="button" value="설문하러가기" style="background-color: #92a8d1;" onclick="location.href='index.jsp'">
+<input type="button" value="결과 확인" style="background-color: #f7cac9;" onclick="location.href='survey_result.jsp'">
 </form>
 </body>
 </html>
